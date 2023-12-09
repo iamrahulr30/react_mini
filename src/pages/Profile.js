@@ -65,7 +65,6 @@ const Profile = () => {
    const handleFilter = (seek) => {
 
     setSearch(seek)
-    console.log("search" , search)
     const new_array = dog_list.filter((dogs) => {
         return dogs.breed.includes(seek)  && (dogs.price >= vals[0] && dogs.price <= vals[1])
     })
@@ -83,7 +82,6 @@ const Profile = () => {
     const new_array = dog_list.filter((dogs) => {
         return dogs.breed.includes(search)  && (dogs.price >= vals[0] && dogs.price <= vals[1])
     })
-    console.log("fil" , new_array)
 
     setDogs(new_array)
 

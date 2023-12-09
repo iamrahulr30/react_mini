@@ -5,8 +5,7 @@ const BreedDetails = () => {
     const { id : name_ } = useParams()
 
     const { data ,isPending, error} =  useFetch(`https://api.api-ninjas.com/v1/dogs?name=${name_}`)
-    // console.log(data)
-    // console.log("d" + data.slice(1,-1))
+
 
     if ( data !== null ) {
         var obj = JSON.parse(`${data.slice(1,-1)}`)

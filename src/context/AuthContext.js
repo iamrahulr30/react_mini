@@ -15,7 +15,6 @@ const AuthContextProvider = ({ children }) => {
             setCurrentUser(userCred)
         }))
 
-        console.log(currentUser)
     }
     , [])
 

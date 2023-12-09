@@ -2,7 +2,6 @@ import { useState, useEffect  } from "react"
 
 const useFetch = (url) => {
 
-    console.log("url " + url)
     const [data, setData] = useState(null)
     const [isPending ,setIsPending] = useState(true)
     const [error , SetError] = useState(null)
@@ -10,7 +9,6 @@ const useFetch = (url) => {
     useEffect( () =>{
         const abortCont = new AbortController()
 
-      console.log(process.env.REACT_APP_X_API_KEY)
 
         setTimeout(()=> { fetch(url,{ 
                 
